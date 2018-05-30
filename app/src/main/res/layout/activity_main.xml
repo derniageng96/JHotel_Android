@@ -6,4 +6,38 @@
     android:layout_height="match_parent"
     tools:context="com.example.user.jhotel_android_derni.MainActivity">
 
+    <RelativeLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:background="@color/transparent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ExpandableListView
+            android:id="@+id/expandHotel"
+            android:layout_width="311dp"
+            android:layout_height="396dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="25dp"
+            android:divider="#f00"
+            android:listSelector="#36f"
+            tools:layout_editor_absoluteX="204dp"
+            tools:layout_editor_absoluteY="0dp">
+
+        </ExpandableListView>
+
+        <Button
+            android:id="@+id/pesanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expandHotel"
+            android:layout_centerHorizontal="true"
+            android:text="Pesanan" />
+    </RelativeLayout>
+
+
 </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.jhotel_android_derni.AttractionsActivity">
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="388dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/flower"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="161dp"
+            android:layout_height="155dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="31dp"
+
+            android:background="@drawable/sport" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="161dp"
+            android:layout_height="155dp"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/imageView2"
+
+            android:layout_marginBottom="11dp"
+            android:background="@drawable/restaurant" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="161dp"
+            android:layout_height="155dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/imageView"
+
+            android:layout_marginEnd="17dp"
+
+            android:background="@drawable/pijet" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="161dp"
+            android:layout_height="155dp"
+
+            android:layout_alignParentBottom="true"
+
+            android:layout_alignStart="@+id/imageView"
+            android:layout_marginBottom="51dp"
+            android:background="@drawable/renang" />
+
+        <TextView
+            android:id="@+id/awashima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/renang"
+            android:layout_below="@+id/imageView"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="20dp"
+            android:text="Sport" />
+
+        <TextView
+            android:id="@+id/refleksi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/awashima"
+            android:layout_marginEnd="51dp"
+            android:text="Pijat Refleksi" />
+
+        <TextView
+            android:id="@+id/renang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageView3"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="44dp"
+            android:gravity="right"
+            android:text="Kolam Renang" />
+
+        <TextView
+            android:id="@+id/restaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/renang"
+            android:layout_marginEnd="70dp"
+            android:gravity="right"
+            android:text="Restaurant" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

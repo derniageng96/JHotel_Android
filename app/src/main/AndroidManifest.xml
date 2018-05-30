@@ -19,7 +19,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".SelesaiPesananActivity" />
+        <activity android:name=".SplashScreenActivity" />
+        <activity android:name=".BuatPesananActivity" />
+        <activity android:name=".AttractionsActivity"></activity>
     </application>
 
 </manifest>

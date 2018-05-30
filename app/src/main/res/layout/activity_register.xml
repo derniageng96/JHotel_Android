@@ -6,45 +6,129 @@
     android:layout_height="match_parent"
     tools:context="com.example.user.jhotel_android_derni.RegisterActivity">
 
-    <EditText
-        android:id="@+id/email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="1dp"
-        android:layout_marginTop="41dp"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/full_name"
-        app:layout_constraintTop_toBottomOf="@+id/full_name" />
-
-    <EditText
-        android:id="@+id/full_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
-        android:ems="10"
-        android:hint="FullName"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
-        tools:layout_editor_absoluteX="84dp"
-        tools:layout_editor_absoluteY="204dp" />
-
     <Button
-        android:id="@+id/register"
+        android:id="@+id/registerButton"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Register"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="281dp" />
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="148dp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="sans-serif-medium"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:text="Register Now"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="388dp"
+        android:layout_height="510dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="24dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/registerButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/TextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="23dp"
+            android:text="Register"
+            android:textSize="36sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/nameInput"
+            android:layout_alignStart="@+id/nameInput"
+            android:layout_marginBottom="-88dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Full Name"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="346dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="88dp"
+            android:background="@drawable/et_bg"
+            android:fontFamily="sans-serif-light"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/emailInput"
+            android:layout_alignStart="@+id/nameInput"
+            android:layout_marginBottom="-146dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Email"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="346dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="146dp"
+            android:background="@drawable/et_bg"
+            android:fontFamily="sans-serif-light"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/nameInput"
+            android:layout_below="@+id/emailInput"
+            android:fontFamily="sans-serif-light"
+            android:text="Password"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/passInput"
+            android:layout_width="346dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="207dp"
+            android:background="@drawable/et_bg"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
